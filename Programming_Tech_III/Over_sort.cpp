@@ -8,9 +8,11 @@
 using namespace std;
 struct A{
     char word[110];
-    bool operator <(const A& o)const{
-        if(strcmp(word,o.word)<0) return true;
-        else return false;
+    bool operator < (const A& o)const{
+        if(strcmp(word,o.word) < 0)
+            return word < o.word;
+        else
+            return word > o.word;
     }
 };
 int a[100100];
@@ -30,10 +32,10 @@ int main()
         sort(a,a+n);
         for(i=0;i<n;i++){
             printf("%d ",a[i]);
-        }cout << "\n";
+        }printf("\n");
         for(i=n-1;i>=0;i--){
             printf("%d ",a[i]);
-        }cout << "\n";
+        }printf("\n");
     }
     else if(t==2)
     {

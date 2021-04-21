@@ -21,7 +21,6 @@ void play(int a,int b,int state){
     play(a+1,b,state+1);
     ans[state] = 2;
     play(a,b+1,state+1);
-
 }
 
 int main()

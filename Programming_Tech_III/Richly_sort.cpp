@@ -7,10 +7,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 struct P{
-    int x,y;
-    bool operator<(const P& o)const{
-        if(x==o.x) return y>o.y;
-        return x<o.x;
+    int x, y;
+    bool operator < (const P& o)const{
+        if(x != o.x)
+            return x < o.x;
+        else
+            return y > o.y;
     }
 
 };

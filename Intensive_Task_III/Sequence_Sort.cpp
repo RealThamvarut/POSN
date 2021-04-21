@@ -6,6 +6,7 @@
 */
 #include<bits/stdc++.h>
 using namespace std;
+
 vector<int> a;
 vector< vector<int> > b;
 
@@ -25,7 +26,8 @@ int main()
     for(i=0;i<n;i++){
         for(j=0;j<k;j++){
             printf("%d ",b[i][j]);
-        }printf("\n");
+        }
+        printf("\n");
     }
     return 0;
 }

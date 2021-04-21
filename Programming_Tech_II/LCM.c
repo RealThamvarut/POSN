@@ -1,5 +1,5 @@
 /*
-    TASK: LCD //Least common multiplier
+    TASK: LCM//Least common multiplier
     LANG: C
     AUTHOR: THAMVARUT
     SCHOOL: RYW
@@ -11,8 +11,8 @@ ll gcd(ll a, ll b){
         return b;
     }
     return gcd(b,a%b);
-
 }
+
 int main()
 {
     ll n,ans,i,num;

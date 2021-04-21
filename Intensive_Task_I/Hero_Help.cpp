@@ -18,6 +18,9 @@ int main()
     sort(y,y+n);
     for(i=0;i<n;i++){
         idx = lower_bound(x,x+n,x[i]+k)-x;
+        /// 2 - 5
+        /// x + 2, x + 6,
+        /// x + 1, x + n + 1, k - x - 1
         ans = max(ans,idx-i);
     }
     for(i=0;i<n;i++){

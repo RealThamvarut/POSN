@@ -11,9 +11,11 @@ int main()
 {
     int i,j,cnt=1;
     int n;
+    //mark Odd Number
     for(i=3;i<8000000;i+=2){
         a[i] = 1;
     }
+    //find Prime Using Sieve of
     for(i=3;i<sqrt(8000000);i+=2){
         if(a[i]){
             for(j=i*i;j<8000000;j+=i){
@@ -23,9 +25,11 @@ int main()
     }
 
     scanf("%d",&n);
+    //First Prime is 2
     if(n==1){
         printf("2\n"); return 0;
     }
+    //
     for(i=3;i<8000000;i++){
         if(a[i]==1){
             cnt++;

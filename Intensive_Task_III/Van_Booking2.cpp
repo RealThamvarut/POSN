@@ -9,7 +9,8 @@ using namespace std;
 struct A{
     int in,a;
     bool operator < (const A& o) const{
-        if(a != o.a)    return a > o.a; //normal is a < o.a but this is priority queue
+        if(a != o.a)    return a > o.a;
+        //normal is a < o.a but this is priority queue
         return in > o.in;
     }
 };

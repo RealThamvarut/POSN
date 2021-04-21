@@ -7,8 +7,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 int a[100100];
+
 int main()
 {
     int n,q,i,k;
@@ -19,7 +19,7 @@ int main()
     sort(a,a+n);
     while(q--){
         scanf("%d",&k);
-        printf("%d\n",upper_bound(a,a+n,k)-a);
+        printf("%d\n",upper_bound(a, a+n, k) - a);
     }
     return 0;
 }

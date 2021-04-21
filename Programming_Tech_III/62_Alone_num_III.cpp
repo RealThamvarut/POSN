@@ -6,7 +6,7 @@
 */
 #include<bits/stdc++.h>
 using namespace std;
-map<int,int> mp;
+map <int, int> mp;
 int a[100100];
 int ans[100100];
 int main()
